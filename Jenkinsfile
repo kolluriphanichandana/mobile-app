@@ -17,7 +17,7 @@ tools
 stage('compile')
 {
 tools{
-      maven 'maven_3.5.0'
+      maven 'maven_3.9.0'
 }
 steps{
       sh 'mvn --version'
