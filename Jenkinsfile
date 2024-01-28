@@ -3,33 +3,33 @@ pipeline
 agent{label 'linux'}
 stages
 {
-stage{clean)
+stage{'clean')
 {
 tools
 {
    maven 'maven_3.9.0'
 }
- step{
+ steps{
        sh 'mvn --version'
        sh 'mvn clean'
 }
 }
-stage(compile)
+stage('compile')
 {
 tools{
       maven 'maven_3.5.0'
 }
-step{
+steps{
       sh 'mvn --version'
       sh 'mvn compile'
 }
 }
-stage(test)
+stage('test')
 {  
 tools{
 maven 'maven_3.9.0'
 }
-step
+steps
 {
   sh 'mvn --version'
   sh 'mvn test'
