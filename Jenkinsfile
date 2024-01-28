@@ -3,7 +3,7 @@ pipeline
 agent{label 'linux'}
 stages
 {
-stage{'clean')
+stage('clean')
 {
 tools
 {
